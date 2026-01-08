@@ -1,0 +1,149 @@
+{
+  "model_spec": "mistral:magistral-medium-latest",
+  "provider": "mistral",
+  "request": {
+    "body": {
+      "b64": "eyJtYXhfdG9rZW5zIjoyMDAwLCJtZXNzYWdlcyI6W3siY29udGVudCI6IkhlbGxvIHdvcmxkISIsInJvbGUiOiJ1c2VyIn1dLCJtb2RlbCI6Im1hZ2lzdHJhbC1tZWRpdW0tbGF0ZXN0Iiwic3RyZWFtIjpmYWxzZSwidGVtcGVyYXR1cmUiOjAuMH0="
+    },
+    "canonical_json": {
+      "max_tokens": 2000,
+      "messages": [
+        {
+          "content": "Hello world!",
+          "role": "user"
+        }
+      ],
+      "model": "magistral-medium-latest",
+      "stream": false,
+      "temperature": 0.0
+    },
+    "headers": {
+      "accept-encoding": [
+        "gzip"
+      ],
+      "authorization": "[REDACTED:authorization]",
+      "content-type": [
+        "application/json"
+      ],
+      "user-agent": [
+        "req/0.5.16"
+      ]
+    },
+    "method": "post",
+    "url": "https://api.mistral.ai/v1/chat/completions"
+  },
+  "response": {
+    "body": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": [
+              {
+                "thinking": [
+                  {
+                    "text": "Okay, the user said \"Hello world!\" which is a common greeting or phrase used in programming to test output. Since it's a greeting, I should respond with a friendly greeting as well. But to be safe, I should consider that the user might be testing something or just saying hello. I'll respond with a friendly hello to be safe.",
+                    "type": "text"
+                  }
+                ],
+                "type": "thinking"
+              },
+              {
+                "text": "Hello! How can I assist you today?",
+                "type": "text"
+              }
+            ],
+            "role": "assistant",
+            "tool_calls": null
+          }
+        }
+      ],
+      "created": 1767804826,
+      "id": "8d7fce38dfce4217988fde833303e3be",
+      "model": "magistral-medium-latest",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 82,
+        "prompt_tokens": 6,
+        "total_tokens": 88
+      }
+    },
+    "headers": {
+      "access-control-allow-origin": [
+        "*"
+      ],
+      "alt-svc": [
+        "h3=\":443\"; ma=86400"
+      ],
+      "cf-cache-status": [
+        "DYNAMIC"
+      ],
+      "cf-ray": [
+        "[REDACTED:cf-ray]"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 07 Jan 2026 16:53:49 GMT"
+      ],
+      "mistral-correlation-id": [
+        "[REDACTED:mistral-correlation-id]"
+      ],
+      "server": [
+        "cloudflare"
+      ],
+      "set-cookie": [
+        "[REDACTED:set-cookie]",
+        "[REDACTED:set-cookie]"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains; preload"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-envoy-upstream-service-time": [
+        "2523"
+      ],
+      "x-kong-proxy-latency": [
+        "7"
+      ],
+      "x-kong-request-id": [
+        "[REDACTED:x-kong-request-id]"
+      ],
+      "x-kong-upstream-latency": [
+        "2524"
+      ],
+      "x-ratelimit-limit-req-minute": [
+        "60"
+      ],
+      "x-ratelimit-limit-tokens-minute": [
+        "75000"
+      ],
+      "x-ratelimit-limit-tokens-month": [
+        "50000000000"
+      ],
+      "x-ratelimit-remaining-req-minute": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-minute": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-month": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-tokens-query-cost": [
+        "88"
+      ]
+    },
+    "status": 200
+  }
+}

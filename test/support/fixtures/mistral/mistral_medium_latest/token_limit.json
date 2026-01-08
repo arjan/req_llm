@@ -1,0 +1,135 @@
+{
+  "model_spec": "mistral:mistral-medium-latest",
+  "provider": "mistral",
+  "request": {
+    "body": {
+      "b64": "eyJtYXhfdG9rZW5zIjoxMDAsIm1lc3NhZ2VzIjpbeyJjb250ZW50IjoiV3JpdGUgYSB2ZXJ5IGxvbmcgc3RvcnkgYWJvdXQgZHJhZ29ucyBhbmQgYWR2ZW50dXJlcyIsInJvbGUiOiJ1c2VyIn1dLCJtb2RlbCI6Im1pc3RyYWwtbWVkaXVtLWxhdGVzdCIsInN0cmVhbSI6ZmFsc2UsInRlbXBlcmF0dXJlIjowLjV9"
+    },
+    "canonical_json": {
+      "max_tokens": 100,
+      "messages": [
+        {
+          "content": "Write a very long story about dragons and adventures",
+          "role": "user"
+        }
+      ],
+      "model": "mistral-medium-latest",
+      "stream": false,
+      "temperature": 0.5
+    },
+    "headers": {
+      "accept-encoding": [
+        "gzip"
+      ],
+      "authorization": "[REDACTED:authorization]",
+      "content-type": [
+        "application/json"
+      ],
+      "user-agent": [
+        "req/0.5.16"
+      ]
+    },
+    "method": "post",
+    "url": "https://api.mistral.ai/v1/chat/completions"
+  },
+  "response": {
+    "body": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "index": 0,
+          "message": {
+            "content": "**The Last Dragon’s Breath: A Tale of Fire and Fate**\n\n---\n\n### **Prologue: The Fall of the Skyfire**\n\nLong before the age of men, when the world was still young and the mountains breathed smoke, the dragons ruled the skies. They were not mere beasts—they were gods of flame and storm, each bearing a name that echoed through the valleys like thunder.\n\nThe greatest of them was **Vermithrax the Eternal**, the Skyfire, whose wings cast",
+            "role": "assistant",
+            "tool_calls": null
+          }
+        }
+      ],
+      "created": 1767804647,
+      "id": "a5c254164396445ead1bab6343ccb6ac",
+      "model": "mistral-medium-latest",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 12,
+        "total_tokens": 112
+      }
+    },
+    "headers": {
+      "access-control-allow-origin": [
+        "*"
+      ],
+      "alt-svc": [
+        "h3=\":443\"; ma=86400"
+      ],
+      "cf-cache-status": [
+        "DYNAMIC"
+      ],
+      "cf-ray": [
+        "[REDACTED:cf-ray]"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 07 Jan 2026 16:50:50 GMT"
+      ],
+      "mistral-correlation-id": [
+        "[REDACTED:mistral-correlation-id]"
+      ],
+      "server": [
+        "cloudflare"
+      ],
+      "set-cookie": [
+        "[REDACTED:set-cookie]",
+        "[REDACTED:set-cookie]"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains; preload"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-envoy-upstream-service-time": [
+        "2663"
+      ],
+      "x-kong-proxy-latency": [
+        "11"
+      ],
+      "x-kong-request-id": [
+        "[REDACTED:x-kong-request-id]"
+      ],
+      "x-kong-upstream-latency": [
+        "2664"
+      ],
+      "x-ratelimit-limit-req-60-second": [
+        "360"
+      ],
+      "x-ratelimit-limit-tokens-5-minute": [
+        "600000"
+      ],
+      "x-ratelimit-limit-tokens-month": [
+        "200000000000"
+      ],
+      "x-ratelimit-remaining-req-60-second": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-5-minute": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-month": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-tokens-query-cost": [
+        "112"
+      ]
+    },
+    "status": 200
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "model_spec": "mistral:devstral-small-2505",
+  "provider": "mistral",
+  "request": {
+    "body": {
+      "b64": "eyJtYXhfdG9rZW5zIjoxMjgwMCwibWVzc2FnZXMiOlt7ImNvbnRlbnQiOiJVc2UgdGhlIGFkZCB0b29sIHRvIGNvbXB1dGUgMiArIDMuIEFmdGVyIHRoZSB0b29sIHJlc3VsdCBhcnJpdmVzLCByZXNwb25kIHdpdGggJ3N1bT08dmFsdWU+Jy4iLCJyb2xlIjoidXNlciJ9XSwibW9kZWwiOiJkZXZzdHJhbC1zbWFsbC0yNTA1Iiwic3RyZWFtIjpmYWxzZSwidGVtcGVyYXR1cmUiOjAuMCwidG9vbF9jaG9pY2UiOnsiZnVuY3Rpb24iOnsibmFtZSI6ImFkZCJ9LCJ0eXBlIjoiZnVuY3Rpb24ifSwidG9vbHMiOlt7ImZ1bmN0aW9uIjp7ImRlc2NyaXB0aW9uIjoiQWRkIHR3byBpbnRlZ2VycyIsIm5hbWUiOiJhZGQiLCJwYXJhbWV0ZXJzIjp7ImFkZGl0aW9uYWxQcm9wZXJ0aWVzIjpmYWxzZSwicHJvcGVydGllcyI6eyJhIjp7InR5cGUiOiJpbnRlZ2VyIn0sImIiOnsidHlwZSI6ImludGVnZXIifX0sInJlcXVpcmVkIjpbImEiLCJiIl0sInR5cGUiOiJvYmplY3QifX0sInR5cGUiOiJmdW5jdGlvbiJ9XX0="
+    },
+    "canonical_json": {
+      "max_tokens": 12800,
+      "messages": [
+        {
+          "content": "Use the add tool to compute 2 + 3. After the tool result arrives, respond with 'sum=<value>'.",
+          "role": "user"
+        }
+      ],
+      "model": "devstral-small-2505",
+      "stream": false,
+      "temperature": 0.0,
+      "tool_choice": {
+        "function": {
+          "name": "add"
+        },
+        "type": "function"
+      },
+      "tools": [
+        {
+          "function": {
+            "description": "Add two integers",
+            "name": "add",
+            "parameters": {
+              "additionalProperties": false,
+              "properties": {
+                "a": {
+                  "type": "integer"
+                },
+                "b": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "a",
+                "b"
+              ],
+              "type": "object"
+            }
+          },
+          "type": "function"
+        }
+      ]
+    },
+    "headers": {
+      "accept-encoding": [
+        "gzip"
+      ],
+      "authorization": "[REDACTED:authorization]",
+      "content-type": [
+        "application/json"
+      ],
+      "user-agent": [
+        "req/0.5.16"
+      ]
+    },
+    "method": "post",
+    "url": "https://api.mistral.ai/v1/chat/completions"
+  },
+  "response": {
+    "body": {
+      "choices": [
+        {
+          "finish_reason": "tool_calls",
+          "index": 0,
+          "message": {
+            "content": "",
+            "role": "assistant",
+            "tool_calls": [
+              {
+                "function": {
+                  "arguments": "{\"a\": 2, \"b\": 3}",
+                  "name": "add"
+                },
+                "id": "PmWmXbcLN",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "created": 1767804646,
+      "id": "0174460675e94578aab23fb1085df700",
+      "model": "devstral-small-2505",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 16,
+        "prompt_tokens": 105,
+        "total_tokens": 121
+      }
+    },
+    "headers": {
+      "access-control-allow-origin": [
+        "*"
+      ],
+      "alt-svc": [
+        "h3=\":443\"; ma=86400"
+      ],
+      "cf-cache-status": [
+        "DYNAMIC"
+      ],
+      "cf-ray": [
+        "[REDACTED:cf-ray]"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 07 Jan 2026 16:50:46 GMT"
+      ],
+      "mistral-correlation-id": [
+        "[REDACTED:mistral-correlation-id]"
+      ],
+      "server": [
+        "cloudflare"
+      ],
+      "set-cookie": [
+        "[REDACTED:set-cookie]",
+        "[REDACTED:set-cookie]"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains; preload"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-envoy-upstream-service-time": [
+        "209"
+      ],
+      "x-kong-proxy-latency": [
+        "8"
+      ],
+      "x-kong-request-id": [
+        "[REDACTED:x-kong-request-id]"
+      ],
+      "x-kong-upstream-latency": [
+        "209"
+      ],
+      "x-ratelimit-limit-req-60-second": [
+        "360"
+      ],
+      "x-ratelimit-limit-tokens-minute": [
+        "2000000"
+      ],
+      "x-ratelimit-limit-tokens-month": [
+        "10000000000"
+      ],
+      "x-ratelimit-remaining-req-60-second": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-minute": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-month": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-tokens-query-cost": [
+        "121"
+      ]
+    },
+    "status": 200
+  }
+}

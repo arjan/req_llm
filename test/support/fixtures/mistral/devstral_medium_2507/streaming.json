@@ -1,0 +1,83 @@
+{
+  "captured_at": "2026-01-07T16:50:46.154043Z",
+  "chunks": [
+    {
+      "b64": "ZGF0YTogeyJpZCI6IjRlNDMwMzJjYjQ4MjRhOWFiNDVhYjBkMjY4NTQwMDczIiwib2JqZWN0IjoiY2hhdC5jb21wbGV0aW9uLmNodW5rIiwiY3JlYXRlZCI6MTc2NzgwNDY0NSwibW9kZWwiOiJkZXZzdHJhbC1tZWRpdW0tMjUwNyIsImNob2ljZXMiOlt7ImluZGV4IjowLCJkZWx0YSI6eyJyb2xlIjoiYXNzaXN0YW50IiwiY29udGVudCI6IiJ9LCJmaW5pc2hfcmVhc29uIjpudWxsfV19"
+    },
+    {
+      "b64": "CgpkYXRhOiB7ImlkIjoiNGU0MzAzMmNiNDgyNGE5YWI0NWFiMGQyNjg1NDAwNzMiLCJvYmplY3QiOiJjaGF0LmNvbXBsZXRpb24uY2h1bmsiLCJjcmVhdGVkIjoxNzY3ODA0NjQ1LCJtb2RlbCI6ImRldnN0cmFsLW1lZGl1bS0yNTA3IiwiY2hvaWNlcyI6W3siaW5kZXgiOjAsImRlbHRhIjp7ImNvbnRlbnQiOiJIZWxsbyJ9LCJmaW5pc2hfcmVhc29uIjpudWxsfV0sInAiOiJhYmNkZWZnIn0KCg=="
+    },
+    {
+      "b64": "ZGF0YTogeyJpZCI6IjRlNDMwMzJjYjQ4MjRhOWFiNDVhYjBkMjY4NTQwMDczIiwib2JqZWN0IjoiY2hhdC5jb21wbGV0aW9uLmNodW5rIiwiY3JlYXRlZCI6MTc2NzgwNDY0NSwibW9kZWwiOiJkZXZzdHJhbC1tZWRpdW0tMjUwNyIsImNob2ljZXMiOlt7ImluZGV4IjowLCJkZWx0YSI6eyJjb250ZW50IjoiLCJ9LCJmaW5pc2hfcmVhc29uIjpudWxsfV0sInAiOiJhYmNkZWZnaCJ9"
+    },
+    {
+      "b64": "Cgo="
+    },
+    {
+      "b64": "ZGF0YTogeyJpZCI6IjRlNDMwMzJjYjQ4MjRhOWFiNDVhYjBkMjY4NTQwMDczIiwib2JqZWN0IjoiY2hhdC5jb21wbGV0aW9uLmNodW5rIiwiY3JlYXRlZCI6MTc2NzgwNDY0NSwibW9kZWwiOiJkZXZzdHJhbC1tZWRpdW0tMjUwNyIsImNob2ljZXMiOlt7ImluZGV4IjowLCJkZWx0YSI6eyJjb250ZW50IjoiIHN1bnNoaW5lIn0sImZpbmlzaF9yZWFzb24iOm51bGx9XSwicCI6ImFiY2RlZmdoaWoifQoK"
+    },
+    {
+      "b64": "ZGF0YTogeyJpZCI6IjRlNDMwMzJjYjQ4MjRhOWFiNDVhYjBkMjY4NTQwMDczIiwib2JqZWN0IjoiY2hhdC5jb21wbGV0aW9uLmNodW5rIiwiY3JlYXRlZCI6MTc2NzgwNDY0NSwibW9kZWwiOiJkZXZzdHJhbC1tZWRpdW0tMjUwNyIsImNob2ljZXMiOlt7ImluZGV4IjowLCJkZWx0YSI6eyJjb250ZW50IjoiISJ9LCJmaW5pc2hfcmVhc29uIjoic3RvcCJ9XSwidXNhZ2UiOnsicHJvbXB0X3Rva2VucyI6MjMsInRvdGFsX3Rva2VucyI6MjgsImNvbXBsZXRpb25fdG9rZW5zIjo1fSwicCI6ImFiY2RlZmdoIn0KCg=="
+    },
+    {
+      "b64": "ZGF0YTogW0RPTkVdCgo="
+    }
+  ],
+  "model_spec": "mistral:devstral-medium-2507",
+  "provider": "mistral",
+  "request": {
+    "body": {
+      "b64": "eyJtYXhfdG9rZW5zIjoxMDAsIm1lc3NhZ2VzIjpbeyJjb250ZW50IjoiWW91IGFyZSBhIGhlbHBmdWwsIGNyZWF0aXZlIGFzc2lzdGFudC4iLCJyb2xlIjoic3lzdGVtIn0seyJjb250ZW50IjoiU2F5IGhlbGxvIGluIG9uZSBzaG9ydCwgaW1hZ2luYXRpdmUgc2VudGVuY2UuIiwicm9sZSI6InVzZXIifV0sIm1vZGVsIjoiZGV2c3RyYWwtbWVkaXVtLTI1MDciLCJzdHJlYW0iOnRydWUsInN0cmVhbV9vcHRpb25zIjp7ImluY2x1ZGVfdXNhZ2UiOnRydWV9LCJ0ZW1wZXJhdHVyZSI6MC45LCJ0b3BfcCI6MC44fQ=="
+    },
+    "canonical_json": {
+      "max_tokens": 100,
+      "messages": [
+        {
+          "content": "You are a helpful, creative assistant.",
+          "role": "system"
+        },
+        {
+          "content": "Say hello in one short, imaginative sentence.",
+          "role": "user"
+        }
+      ],
+      "model": "devstral-medium-2507",
+      "stream": true,
+      "stream_options": {
+        "include_usage": true
+      },
+      "temperature": 0.9,
+      "top_p": 0.8
+    },
+    "headers": {
+      "accept": "text/event-stream",
+      "authorization": "[REDACTED:authorization]",
+      "content-type": "application/json"
+    },
+    "method": "POST",
+    "url": "https://api.mistral.ai/v1/chat/completions"
+  },
+  "response": {
+    "body": null,
+    "headers": {
+      "access-control-allow-origin": "*",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cf-cache-status": "DYNAMIC",
+      "cf-ray": "[REDACTED:cf-ray]",
+      "connection": "keep-alive",
+      "content-type": "text/event-stream; charset=utf-8",
+      "date": "Wed, 07 Jan 2026 16:50:46 GMT",
+      "mistral-correlation-id": "[REDACTED:mistral-correlation-id]",
+      "server": "cloudflare",
+      "set-cookie": "[REDACTED:set-cookie]",
+      "strict-transport-security": "max-age=15552000; includeSubDomains; preload",
+      "transfer-encoding": "chunked",
+      "x-content-type-options": "nosniff",
+      "x-envoy-upstream-service-time": "157",
+      "x-kong-proxy-latency": "8",
+      "x-kong-request-id": "[REDACTED:x-kong-request-id]",
+      "x-kong-upstream-latency": "158"
+    },
+    "status": 200
+  }
+}

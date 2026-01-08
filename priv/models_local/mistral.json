@@ -1,0 +1,141 @@
+{
+  "provider": {
+    "id": "mistral",
+    "name": "Mistral AI"
+  },
+  "exclude": [
+    "mistral-embed",
+    "open-mistral-7b",
+    "mistral-nemo",
+    "magistral-small",
+    "magistral-medium-latest",
+    "devstral-medium-2507"
+  ],
+  "models": [
+    {
+      "id": "mistral-small-latest",
+      "name": "Mistral Small",
+      "provider": "mistral",
+      "provider_model_id": "mistral-small-latest",
+      "type": "chat",
+      "tool_call": true,
+      "stream": true,
+      "reasoning": false,
+      "temperature": true,
+      "attachment": false,
+      "open_weights": false,
+      "modalities": {
+        "input": ["text"],
+        "output": ["text"]
+      },
+      "cost": {
+        "input": 0.0001,
+        "output": 0.0003
+      },
+      "limit": {
+        "context": 32000,
+        "output": 8192
+      }
+    },
+    {
+      "id": "mistral-medium-latest",
+      "name": "Mistral Medium",
+      "provider": "mistral",
+      "provider_model_id": "mistral-medium-latest",
+      "type": "chat",
+      "tool_call": true,
+      "stream": true,
+      "reasoning": false,
+      "temperature": true,
+      "attachment": false,
+      "open_weights": false,
+      "modalities": {
+        "input": ["text"],
+        "output": ["text"]
+      },
+      "cost": {
+        "input": 0.0004,
+        "output": 0.0012
+      },
+      "limit": {
+        "context": 32000,
+        "output": 8192
+      }
+    },
+    {
+      "id": "mistral-large-latest",
+      "name": "Mistral Large",
+      "provider": "mistral",
+      "provider_model_id": "mistral-large-latest",
+      "type": "chat",
+      "tool_call": true,
+      "stream": true,
+      "reasoning": false,
+      "temperature": true,
+      "attachment": false,
+      "open_weights": false,
+      "modalities": {
+        "input": ["text"],
+        "output": ["text"]
+      },
+      "cost": {
+        "input": 0.002,
+        "output": 0.006
+      },
+      "limit": {
+        "context": 128000,
+        "output": 8192
+      }
+    },
+    {
+      "id": "codestral-latest",
+      "name": "Codestral",
+      "provider": "mistral",
+      "provider_model_id": "codestral-latest",
+      "type": "chat",
+      "tool_call": true,
+      "stream": true,
+      "reasoning": false,
+      "temperature": true,
+      "attachment": false,
+      "open_weights": false,
+      "modalities": {
+        "input": ["text"],
+        "output": ["text"]
+      },
+      "cost": {
+        "input": 0.0003,
+        "output": 0.0009
+      },
+      "limit": {
+        "context": 256000,
+        "output": 8192
+      }
+    },
+    {
+      "id": "pixtral-large-latest",
+      "name": "Pixtral Large",
+      "provider": "mistral",
+      "provider_model_id": "pixtral-large-latest",
+      "type": "chat",
+      "tool_call": true,
+      "stream": true,
+      "reasoning": false,
+      "temperature": true,
+      "attachment": true,
+      "open_weights": false,
+      "modalities": {
+        "input": ["text", "image"],
+        "output": ["text"]
+      },
+      "cost": {
+        "input": 0.002,
+        "output": 0.006
+      },
+      "limit": {
+        "context": 128000,
+        "output": 8192
+      }
+    }
+  ]
+}

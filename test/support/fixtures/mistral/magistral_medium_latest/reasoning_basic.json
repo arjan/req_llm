@@ -1,0 +1,149 @@
+{
+  "model_spec": "mistral:magistral-medium-latest",
+  "provider": "mistral",
+  "request": {
+    "body": {
+      "b64": "eyJtYXhfdG9rZW5zIjo1MDAwLCJtZXNzYWdlcyI6W3siY29udGVudCI6IlNvbHZlIDEyKjcgYW5kIHNob3cgeW91ciBpbnRlcm5hbCB0aGlua2luZyAoYnJpZWYpLiIsInJvbGUiOiJ1c2VyIn1dLCJtb2RlbCI6Im1hZ2lzdHJhbC1tZWRpdW0tbGF0ZXN0Iiwic3RyZWFtIjpmYWxzZSwidGVtcGVyYXR1cmUiOjEuMH0="
+    },
+    "canonical_json": {
+      "max_tokens": 5000,
+      "messages": [
+        {
+          "content": "Solve 12*7 and show your internal thinking (brief).",
+          "role": "user"
+        }
+      ],
+      "model": "magistral-medium-latest",
+      "stream": false,
+      "temperature": 1.0
+    },
+    "headers": {
+      "accept-encoding": [
+        "gzip"
+      ],
+      "authorization": "[REDACTED:authorization]",
+      "content-type": [
+        "application/json"
+      ],
+      "user-agent": [
+        "req/0.5.16"
+      ]
+    },
+    "method": "post",
+    "url": "https://api.mistral.ai/v1/chat/completions"
+  },
+  "response": {
+    "body": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "content": [
+              {
+                "thinking": [
+                  {
+                    "text": "Okay, let's see. I need to solve 12 times 7. First, I recall that 12 times 7 is the same as adding 12 seven times: 12 + 12 + 12 + 12 + 12 + 12 + 12. But that might take a while. Maybe I can use the distributive property of multiplication over addition to break it down. I know that 12 can be split into 10 and 2. So, 12 times 7 is the same as (10 + 2) times 7. Using the distributive property, that's 10 times 7 plus 2 times 7. I know that 10 times 7 is 70, and 2 times 7 is 14. So, 70 plus 14 is 84. Let me check that with another method to be sure. I can also think of 12 times 7 as 12 times (5 + 2), which is 12 times 5 plus 12 times 2. 12 times 5 is 60, and 12 times 2 is 24. So, 60 plus 24 is also 84. Both methods give the same result, so I can be confident that 12 times 7 is 84.",
+                    "type": "text"
+                  }
+                ],
+                "type": "thinking"
+              },
+              {
+                "text": "To solve 12 times 7, we can use the distributive property of multiplication over addition. We can break down 12 into 10 and 2:\n\n\\[ 12 \\times 7 = (10 + 2) \\times 7 \\]\n\nUsing the distributive property:\n\n\\[ (10 + 2) \\times 7 = 10 \\times 7 + 2 \\times 7 \\]\n\nWe know that:\n\n\\[ 10 \\times 7 = 70 \\]\n\\[ 2 \\times 7 = 14 \\]\n\nAdding these results together:\n\n\\[ 70 + 14 = 84 \\]\n\nThus, the solution to \\( 12 \\times 7 \\) is 84.\n\n```markdown\n84\n```",
+                "type": "text"
+              }
+            ],
+            "role": "assistant",
+            "tool_calls": null
+          }
+        }
+      ],
+      "created": 1767804641,
+      "id": "0c37ff37cb8e4827873abf38e089856b",
+      "model": "magistral-medium-latest",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 471,
+        "prompt_tokens": 18,
+        "total_tokens": 489
+      }
+    },
+    "headers": {
+      "access-control-allow-origin": [
+        "*"
+      ],
+      "alt-svc": [
+        "h3=\":443\"; ma=86400"
+      ],
+      "cf-cache-status": [
+        "DYNAMIC"
+      ],
+      "cf-ray": [
+        "[REDACTED:cf-ray]"
+      ],
+      "connection": [
+        "keep-alive"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 07 Jan 2026 16:50:53 GMT"
+      ],
+      "mistral-correlation-id": [
+        "[REDACTED:mistral-correlation-id]"
+      ],
+      "server": [
+        "cloudflare"
+      ],
+      "set-cookie": [
+        "[REDACTED:set-cookie]",
+        "[REDACTED:set-cookie]"
+      ],
+      "strict-transport-security": [
+        "max-age=15552000; includeSubDomains; preload"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-envoy-upstream-service-time": [
+        "12346"
+      ],
+      "x-kong-proxy-latency": [
+        "8"
+      ],
+      "x-kong-request-id": [
+        "[REDACTED:x-kong-request-id]"
+      ],
+      "x-kong-upstream-latency": [
+        "12347"
+      ],
+      "x-ratelimit-limit-req-minute": [
+        "60"
+      ],
+      "x-ratelimit-limit-tokens-minute": [
+        "75000"
+      ],
+      "x-ratelimit-limit-tokens-month": [
+        "50000000000"
+      ],
+      "x-ratelimit-remaining-req-minute": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-minute": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-remaining-tokens-month": [
+        "[REDACTED]"
+      ],
+      "x-ratelimit-tokens-query-cost": [
+        "489"
+      ]
+    },
+    "status": 200
+  }
+}

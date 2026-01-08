@@ -919,6 +919,110 @@
     "status": "pass",
     "last_checked": "2025-11-14T20:51:00Z"
   },
+  "mistral:codestral-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:devstral-2512": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:devstral-medium-2507": {
+    "status": "excluded",
+    "last_checked": "2026-01-07T15:35:37Z"
+  },
+  "mistral:devstral-medium-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:devstral-small-2505": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:devstral-small-2507": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:labs-devstral-small-2512": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:magistral-medium-latest": {
+    "status": "excluded",
+    "last_checked": "2026-01-07T15:35:37Z"
+  },
+  "mistral:magistral-small": {
+    "status": "excluded",
+    "last_checked": "2026-01-07T15:35:37Z"
+  },
+  "mistral:ministral-3b-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:ministral-8b-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-embed": {
+    "status": "excluded",
+    "last_checked": "2026-01-07T15:35:37Z"
+  },
+  "mistral:mistral-large-2411": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-large-2512": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-large-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-medium-2505": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-medium-2508": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-medium-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-nemo": {
+    "status": "excluded",
+    "last_checked": "2026-01-07T15:35:37Z"
+  },
+  "mistral:mistral-small-2506": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:mistral-small-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:open-mistral-7b": {
+    "status": "excluded",
+    "last_checked": "2026-01-07T15:35:37Z"
+  },
+  "mistral:open-mixtral-8x22b": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:open-mixtral-8x7b": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:pixtral-12b": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
+  "mistral:pixtral-large-latest": {
+    "status": "pass",
+    "last_checked": "2026-01-07T17:08:29Z"
+  },
   "openai:chatgpt-4o-latest": {
     "status": "fail",
     "last_checked": "2025-11-14T20:41:35Z"
@@ -948,8 +1052,8 @@
     "last_checked": "2025-11-14T20:41:35Z"
   },
   "openai:gpt-4": {
-    "status": "pass",
-    "last_checked": "2025-11-15T19:06:39Z"
+    "status": "fail",
+    "last_checked": "2026-01-07T15:03:21Z"
   },
   "openai:gpt-4-0314": {
     "status": "fail",
